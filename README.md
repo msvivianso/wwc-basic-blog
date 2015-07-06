@@ -160,6 +160,8 @@ $ git commit --message "Useful message describing the changes you are committing
 
 Now if we check the ```git status``` again we will see that there is nothing to commit. Our working directory doesn't have any new changes.
 
+**Note**: To include a commit message, you can use the option ```--message``` as seen above. Alternatively you can use the option ```-m``` which is just a shorthand notation for ```--message``` in which case your commit would look like:  ```git commit -m "Useful commit message"```
+
 #### 2.1: Checking the Git commit history
 
 If we want to see a list of all the commits we have made we can use the command:
@@ -167,13 +169,38 @@ If we want to see a list of all the commits we have made we can use the command:
 ```bash
 $ git log
 ```
+
 The output of ```git log``` will show you a list of commits in your git history. For each commit you can see the author of the commit, the date you committed the changes, the commit message as well as the commit id. The commit id is a unique identifier used by git that allows you to view and refer to specific commits in your git history.
 
+## Section 3: Adding our code to GitHub
 
+What if we want to store all of our code in a centralized location? We can move our project to GitHub, which is a git repository hosting service. To add our code to Github, we will first need to create a new repository (or project).
+	- Navigate to your github profile
+	- Click on the *Repositories* tab
+	- Click the green *New* button to create a new project
+	- Enter a name for your project where it says *Repository name*
+	- Click the green *Create Repository* button
 
+You have already created a git repository on your computer, so now we just need a way of linking your local git repository with your Github account. To do this, in the terminal we can execute the command:
 
+```bash
+$ git remote add origin <github project url>
+```
 
+You should see your ```github project url``` on the Github project page once you have created a new repository.
 
+In git, ```remote``` just refers to a "remote" location where your code exists, a centralized location somewhere other than your own computer. In this case the remote is referring to Github. By running the above command, we are adding a remote location called ```origin``` which points to the project url in Github.
 
+To then add our code to our remote location in Github we can run the following command:
+
+```bash
+$ git push -u origin master
+```
+
+This promotes your code from your local computer to your project created in Github. The ```-u``` option sets the ```git push``` command to push your code to the ```origin``` from ```master```. ```origin``` is the name we gave to our remote repository in Github and ```master``` is just a name referring to the git repository we are working from on our own computer.
+
+If we refresh our Github project page, we should now see our code has been added to Github!
+
+## Section 4: Working Together from an Existing Repository
 
 
