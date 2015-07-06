@@ -167,7 +167,7 @@ If we want to see a list of all the commits we have made we can use the command:
 ```bash
 $ git log
 ```
-The output of ```git log``` will show you a list of your commit history. For each commit you can see the author of the commit, the date you committed the changes, the commit message as well as the commit id. The commit id is a unique identifier used by git that allows you to view and refer to specific commits in your git history.
+The output of ```git log``` will show you a list of commits in your git history. For each commit you can see the author of the commit, the date you committed the changes, the commit message as well as the commit id. The commit id is a unique identifier used by git that allows you to view and refer to specific commits in your git history.
 
 
 
