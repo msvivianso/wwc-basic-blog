@@ -40,7 +40,7 @@ $ cd ~/Desktop
 
 ```cd``` is a bash command that allows you to change directories. In this case we are changing directories to our desktop directory.
 
-Now let's create a new directory called **women-who-code**. We can do this by using the ```mkdir``` command as shown below.
+Now let's create a new directory called **women-who-code**. We can do this by using the ```mkdir``` command as shown below:
 
 ```bash
 $ mkdir women-who-code
@@ -95,7 +95,7 @@ Navigate to the **women-who-code** folder on your desktop and double-click the i
 
 #### 1.3 Making changes to our index.html
 
-Now let's make a change to our index.html. Instead of saying *Hello World!* say hello to the person sitting on your right. For example *Hello Vivian!*
+Now let's make a change to our index.html. Instead of saying *Hello World!* say hello to the person sitting on your right (or left). For example *Hello Vivian!*
 
 Your code should now look something like this:
 
@@ -128,7 +128,7 @@ $ ls -a
 
 ```ls``` is another bash command that will list all of files and folders in your current directory. The option ```-a``` will make sure you list all of the files and folders, including the .git directory.
 
-#### 2.1: Staging files
+#### 2.1 Staging files
 
 A really useful command is to check the status of your git repository. This will tell you what files you have modified and which files are in staging ready to be committed. To check the status of your git repository you can type:
 
@@ -148,7 +148,7 @@ The ```git add``` command will move your index.html file from your working direc
 
 If we check the git status again, we can see that the index.html file is in staging and ready to be committed.
 
-#### 2.1: Committing files
+#### 2.2 Committing files
 
 We have moved our changes from the working directory to staging, but these changes won't be saved in our version control history until we commit them to the git directory. In git, the term *commit* is just another way of saying *save* our changes to the git directory. 
 
@@ -162,7 +162,7 @@ Now if we check the ```git status``` again we will see that there is nothing to 
 
 **Note**: To include a commit message, you can use the option ```--message``` as seen above. Alternatively you can use the option ```-m``` which is just a shorthand notation for ```--message``` in which case your commit would look like:  ```git commit -m "Useful commit message"```
 
-#### 2.1: Checking the Git commit history
+#### 2.3 Checking the Git commit history
 
 If we want to see a list of all the commits we have made we can use the command:
 
@@ -172,14 +172,14 @@ $ git log
 
 The output of ```git log``` will show you a list of commits in your git history. For each commit you can see the author of the commit, the date you committed the changes, the commit message as well as the commit id. The commit id is a unique identifier used by git that allows you to view and refer to specific commits in your git history.
 
-## Section 3: Adding our code to GitHub
+## Section 3: Adding your code to GitHub
 
 What if we want to store all of our code in a centralized location? We can move our project to GitHub, which is a git repository hosting service. To add our code to Github, we will first need to create a new repository (or project).
-	- Navigate to your github profile
-	- Click on the *Repositories* tab
-	- Click the green *New* button to create a new project
-	- Enter a name for your project where it says *Repository name*
-	- Click the green *Create Repository* button
+- Navigate to your github profile
+- Click on the *Repositories* tab
+- Click the green *New* button to create a new project
+- Enter a name for your project where it says *Repository name*
+- Click the green *Create Repository* button
 
 You have already created a git repository on your computer, so now we just need a way of linking your local git repository with your Github account. To do this, in the terminal we can execute the command:
 
@@ -187,7 +187,7 @@ You have already created a git repository on your computer, so now we just need 
 $ git remote add origin <github project url>
 ```
 
-You should see your ```github project url``` on the Github project page once you have created a new repository.
+You can find your ```github project url``` on the Github project page once you have created a new repository.
 
 In git, ```remote``` just refers to a "remote" location where your code exists, a centralized location somewhere other than your own computer. In this case the remote is referring to Github. By running the above command, we are adding a remote location called ```origin``` which points to the project url in Github.
 
@@ -202,5 +202,14 @@ This promotes your code from your local computer to your project created in Gith
 If we refresh our Github project page, we should now see our code has been added to Github!
 
 ## Section 4: Working Together from an Existing Repository
+
+We are going to switch gears a little and work off an existing HTML project we have created for this workshop. Let's split up into groups of 2 or 3. We will be working from the wwc-basic-blog repository at the top of [this tutorial](https://github.com/msvivianso/wwc-basic-blog).
+
+We will want to start by making a copy of [this code](https://github.com/msvivianso/wwc-basic-blog) into our own Github account. At the top right corner of the project page you will see a button that says *Fork*.
+
+Go ahead and click on *Fork*. This will copy the code from Vivian's Github account to your own Github account.
+
+Now within your group of 2 or 3 people, choose one Github account to work off of together. You will then need to add your team members as collaborators to your Github project. Navigate to the **wwc-basic-blog** project, click on *Settings* on the right hand side, and then click *Collaborators* on the left. Search for your team members by their Github username and add them to the project as collaborators.
+
 
 
