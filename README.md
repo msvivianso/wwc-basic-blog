@@ -203,7 +203,9 @@ If we refresh our Github project page, we should now see our code has been added
 
 ## Section 4: Working Together from an Existing Repository
 
-We are going to switch gears a little and work off an existing HTML project we have created for this workshop. Let's split up into groups of 2 or 3. We will be working from the wwc-basic-blog repository at the top of [this tutorial](https://github.com/msvivianso/wwc-basic-blog).
+We are going to switch gears a little and work off of an existing HTML project we have created for this workshop. Let's split up into groups of 2 or 3. We will be working from the wwc-basic-blog repository at the top of this tutorial.
+
+#### 4.1 Getting the Code
 
 We will want to start by making a copy of [this code](https://github.com/msvivianso/wwc-basic-blog) into our own Github account. At the top right corner of the project page you will see a button that says *Fork*.
 
@@ -211,5 +213,32 @@ Go ahead and click on *Fork*. This will copy the code from Vivian's Github accou
 
 Now within your group of 2 or 3 people, choose one Github account to work off of together. You will then need to add your team members as collaborators to your Github project. Navigate to the **wwc-basic-blog** project, click on *Settings* on the right hand side, and then click *Collaborators* on the left. Search for your team members by their Github username and add them to the project as collaborators.
 
+To get the code from an existing project onto your computer you can use the ```git clone``` command. Before cloning the project, let's go back to our terminal and change directories back to our Desktop.
 
+```bash
+$ cd ~/Desktop
+```
 
+You need to specify the url of the project you are copying to your computer, for example:
+
+```bash
+$ git clone https://github.com/msvivianso/wwc-basic-blog.git
+```
+
+From now on, everyone in a team should be working from the Github project you added collaborators to.
+
+Go to your Desktop, open the **wwc-basic-blog** folder and double click the *index.html* file to open it in the browser.
+
+#### 4.2 Making Changes
+
+#### 4.3 Git Workflow
+
+When you are working with a team, it is good to get in the habit of following an agreed upon git workflow. For the remainder of this workshop, you should follow this git workflow when making changes to your code:
+
+- git pull
+- make some changes to your code
+- git status
+- git add <filename>
+- git commit -m "Message describing your changes"
+- git pull
+- git push
