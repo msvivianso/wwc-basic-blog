@@ -107,3 +107,52 @@ Your code should now look something like this:
 </html>
 ```
 Refresh your browser to see the new message.
+
+## Section 2: Introducing Git
+
+Let's add version control to our project with Git! To initialize a new git repository for your project, make sure you are in the **women-who-code** folder and type
+
+```bash
+$ git init
+```
+
+This will create a .git directory, which is where git does all of its work and stores all the history of your project. To see the .git directory, in the terminal we can type:
+
+```bash
+$ ls -a
+```
+
+```ls``` is another bash command that will list all of files and folders in your current directory. The option ```-a``` will make sure you list all of the files and folders, including the .git directory.
+
+#### 2.1: Staging files
+
+A really useful command is to check the status of your git repository. This will tell you what files you have modified and which files are in staging ready to be committed. To check the status of your git repository you can type:
+
+```bash
+$ git status
+```
+
+The output of git status should tell you that your *index.html* is untracked. This means you aren't yet tracking your index.html with your version control system.
+
+To start tracking your *index.html* we can run the command:
+
+```bash
+$ git add index.html
+```
+
+The ```git add``` command will move your index.html file from your working directory to staging and your changes are now being tracked by git. The ```git add``` command takes the filename as an argument in the format ```git add <filename>```.
+
+If we check the git status again, we can see that the index.html file is in staging and ready to be committed.
+
+#### 2.1: Committing files
+
+
+
+
+
+
+
+
+
+
+
