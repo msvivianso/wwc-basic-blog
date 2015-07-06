@@ -238,7 +238,7 @@ When you are working with a team, it is good to get in the habit of following an
 - git pull
 - make some changes to your code
 - git status
-- git add <filename>
+- git add < filename >
 - git commit -m "Message describing your changes"
 - git pull
 - git push
