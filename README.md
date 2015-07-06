@@ -235,7 +235,6 @@ Go to your Desktop, open the **wwc-basic-blog** folder and double click the *ind
 
 When you are working with a team, it is good to get in the habit of following an agreed upon git workflow. For the remainder of this workshop, you should follow this git workflow when making changes to your code:
 
-- git pull
 - make some changes to your code
 - git status
 - git add < filename >
