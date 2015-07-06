@@ -2,7 +2,7 @@
 
 ## Section 0: Installing Git
 
-#### On Windows
+#### 0.1 On Windows
 
 Navigate to https://git-scm.com/download/win . This should automatically start a git download. Go through the git setup wizard steps and click finish when you get to the end of the installer.
 
@@ -15,6 +15,16 @@ $ git --version
 ```
 
 If git is properly installed this command will tell you the version of git on your computer.
+
+#### 0.2 First time git setup
+
+Before we get started, let's set up our git identity. We can set our user name and e-mail using the following two commands:
+
+```bash
+$ git config --global user.name "Amber Houle"
+
+$ git config --global user.email amber.houle3@gmail.com
+```
 
 ## Section 1: Getting started with HTML
 
@@ -51,7 +61,7 @@ If you go to your Desktop, you should see the women-who-code folder with the ind
 
 Let's go to the bottom right corner of Sublime. We should be able to click and choose the language we are using, so go ahead and select HTML from the list of languages.
 
-Let's start by creating the base of our HTML file. In your index.html file, add the following code:
+Now, let's start by creating the base of our HTML file. In your index.html file, add the following code:
 
 ```bash
 <!DOCTYPE html>
@@ -74,7 +84,7 @@ Within the ```<body>``` tag, let's add a paragraph with the text *Hello World!*.
 		<title></title>
 	</head>
 	<body>
-		<p>Hello World!</p>>
+		<p>Hello World!</p>
 	</body>
 </html>
 ```
@@ -92,7 +102,7 @@ Your code should now look something like this:
 		<title></title>
 	</head>
 	<body>
-		<p>Hello Vivian!</p>>
+		<p>Hello Vivian!</p>
 	</body>
 </html>
 ```
