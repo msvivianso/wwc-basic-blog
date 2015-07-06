@@ -8,7 +8,7 @@ Navigate to https://git-scm.com/download/win . This should automatically start a
 
 Git should now be installed. You can verify by going to your desktop, right click and select ```git bash ```. This will open up a terminal window.
 
-You can type:
+In the git-bash terminal window you can type:
 
 ```bash
 $ git --version
@@ -27,6 +27,8 @@ $ git config --global user.email amber.houle3@gmail.com
 ```
 
 ## Section 1: Getting started with HTML
+
+#### 1.1 Creating an HTML file
 
 Let's start by creating a basic HTML file on our computer. 
 
@@ -57,7 +59,7 @@ $ touch index.html
 
 If you go to your Desktop, you should see the women-who-code folder with the index.html file inside. Go ahead and open this file in the text editor Sublime.
 
-#### Adding content to our index.html
+#### 1.2 Adding content to our index.html
 
 Let's go to the bottom right corner of Sublime. We should be able to click and choose the language we are using, so go ahead and select HTML from the list of languages.
 
@@ -90,6 +92,8 @@ Within the ```<body>``` tag, let's add a paragraph with the text *Hello World!*.
 ```
 
 Navigate to the **women-who-code** folder on your desktop and double-click the index.html file to open it in your browser. You should see the *Hello World!* message in your browser.
+
+#### 1.3 Making changes to our index.html
 
 Now let's make a change to our index.html. Instead of saying *Hello World!* say hello to the person sitting on your right. For example *Hello Vivian!*
 
@@ -140,13 +144,30 @@ To start tracking your *index.html* we can run the command:
 $ git add index.html
 ```
 
-The ```git add``` command will move your index.html file from your working directory to staging and your changes are now being tracked by git. The ```git add``` command takes the filename as an argument in the format ```git add <filename>```.
+The ```git add``` command will move your index.html file from your working directory to staging. Staging is like a holding place for all of your changes before you save them to the git repository. The ```git add``` command takes the filename as an argument in the format ```git add <filename>``` so that you can specify which files you want to add to staging.
 
 If we check the git status again, we can see that the index.html file is in staging and ready to be committed.
 
 #### 2.1: Committing files
 
+We have moved our changes from the working directory to staging, but these changes won't be saved in our version control history until we commit them to the git directory. In git, the term *commit* is just another way of saying *save* our changes to the git directory. 
 
+To commit our staged files we can run the command:
+
+```bash
+$ git commit --message "Useful message describing the changes you are committing"
+```
+
+Now if we check the ```git status``` again we will see that there is nothing to commit. Our working directory doesn't have any new changes.
+
+#### 2.1: Checking the Git commit history
+
+If we want to see a list of all the commits we have made we can use the command:
+
+```bash
+$ git log
+```
+The output of ```git log``` will show you a list of your commit history. For each commit you can see the author of the commit, the date you committed the changes, the commit message as well as the commit id. The commit id is a unique identifier used by git that allows you to view and refer to specific commits in your git history.
 
 
 
