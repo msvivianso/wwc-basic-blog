@@ -2,7 +2,7 @@
 
 ## Section 0: Installing Git
 
-#### 0.1 On Windows
+#### 0.1 On Windows 
 
 Navigate to https://git-scm.com/download/win . This should automatically start a git download. Go through the git setup wizard steps and click finish when you get to the end of the installer.
 
@@ -15,6 +15,24 @@ $ git --version
 ```
 
 If git is properly installed this command will tell you the version of git on your computer.
+
+#### 0.2 On Mac
+
+You will need to install [Xcode developer tools](https://developer.apple.com/downloads/) if you don't already have it installed. Sign in with your apple id and agree to any terms and conditions. Once you are on the downloads page, choose the ```Command Line Tools``` download and click on the ```.dmg``` file to start the download. Once it is done downloading, you can open the *DMG* and run the Command Line Tools installer.
+
+Now we need to install git.
+
+Navigate to http://git-scm.com/download/mac . This should automatically start a git download. Once it is done downloading, open the download and double click the *.pkg* file. Click through the steps of the package installer. 
+
+When this is done, you can open the ```Terminal``` program and type in the command line:
+
+```bash
+$ git --version
+```
+
+If git is properly installed this command will tell you the version of git on your computer.
+
+**Note**: If you get the error ```Agreeing to the Xcode/iOS license requires admin priviledges, please re-run as root via sudo```, then open up Xcode and accept the license agreement.
 
 #### 0.2 First time git setup
 
@@ -203,7 +221,7 @@ If we refresh our Github project page, we should now see our code has been added
 
 ## Section 4: Working Together from an Existing Repository
 
-We are going to switch gears a little and work off of an existing HTML project we have created for this workshop. Let's split up into groups of 2 or 3. We will be working from the wwc-basic-blog repository at the top of this tutorial.
+We are going to switch gears a little and work off of an existing HTML project we have created for this workshop. Let's split up into groups of 2 or 3. We will be working from the **wwc-basic-blog** repository at the top of this tutorial.
 
 #### 4.1 Getting the Code
 
@@ -219,13 +237,13 @@ To get the code from an existing project onto your computer you can use the ```g
 $ cd ~/Desktop
 ```
 
-You need to specify the url of the project you are copying to your computer, for example:
+To clone the project, you need to specify the url of the project you are copying to your computer, for example:
 
 ```bash
 $ git clone https://github.com/msvivianso/wwc-basic-blog.git
 ```
 
-From now on, everyone in a team should be working from the Github project you added collaborators to.
+Cloning makes a copy of the project onto your computer. From now on, everyone in a team should be working from the Github project you added collaborators to. 
 
 Go to your Desktop, open the **wwc-basic-blog** folder and double click the *index.html* file to open it in the browser.
 
