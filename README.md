@@ -60,7 +60,7 @@ Open up your terminal and execute the following command:
 $ cd ~/Desktop
 ```
 
-**Note:** Your terminal is just a program that allows you to run different commands, in this workshop we will be using it to run [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) commands. Bash is a command language that allows you to execute different commands through your terminal that interact with your computer.
+**Note:** Your terminal is just a program that allows you to run different commands. In this workshop we will be using it to run [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) commands. Bash is a command language that allows you to execute different commands through your terminal that interact with your computer.
 
 ```cd``` is a Bash command that allows you to change directories. In this case we are changing directories to our desktop directory.
 
@@ -435,5 +435,13 @@ You should then follow the git workflow to commit your changes to your local git
 
 ##### 4.3.3 Dealing with Merge Conflicts
 
+What happens if two team members are making changes to the same file on the same line of code? How does git decide which change is correct and how to merge those changes together?
 
---- adding images 
+When you pull in code that has changes on the same line you have changed, git will give you a *merge conflict*. When this happens, you will need to open the file that has a merge conflict and manually choose which changes you want to be applied to the file.
+
+##### 4.3.4 Adding Images
+
+Each one of you should now find an image of your favorite restaurant, or favorite food on the menu, and add the image beneath the name of your favorite restaurant. You can use the example in the *index.html* file of how to add an image.
+
+Once you've added your image, commit your changes and push them to Github.
+
