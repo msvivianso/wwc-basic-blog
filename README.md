@@ -6,9 +6,6 @@
 
 Navigate to https://git-scm.com/download/win . This should automatically start a git download. Go through the git setup wizard steps and click finish when you get to the end of the installer.
 
-**To install git bash: https://github.com/msysgit/msysgit/releases/ **
-
-
 Git should now be installed. You can verify by going to your desktop, right click and select ```git bash ```. This will open up a terminal window.
 
 In the git-bash terminal window you can type:
@@ -389,6 +386,9 @@ Now that we know we have all of the most recent code from Github, we can push up
 $ git push
 ```
 
+If you refresh your Github project page you should be able to see your new *favorite-restaurants.html* file.
+
+
 ##### 4.3.2 Adding Content to the new HTML page
 
 Your team should have completed *section 4.3.1* together on one computer. Now let's do some work on the same code base but from each of our own computers.
@@ -429,5 +429,9 @@ Each team member should now add a section with a header containing one of their 
 
 You should then follow the git workflow to commit your changes to your local git repository then push them to Github.
 
+**Note:**
+
+##### 4.3.3 Dealing with Merge Conflicts
 
 
+--- adding images 
