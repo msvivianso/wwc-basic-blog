@@ -60,7 +60,9 @@ Open up your terminal and execute the following command:
 $ cd ~/Desktop
 ```
 
-```cd``` is a bash command that allows you to change directories. In this case we are changing directories to our desktop directory.
+**Note:** Your terminal is just a program that allows you to run different commands, in this workshop we will be using it to run [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) commands. Bash is a command language that allows you to execute different commands through your terminal that interact with your computer.
+
+```cd``` is a Bash command that allows you to change directories. In this case we are changing directories to our desktop directory.
 
 Now let's create a new directory called **women-who-code**. We can do this by using the ```mkdir``` command as shown below:
 
