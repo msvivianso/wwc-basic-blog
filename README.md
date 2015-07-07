@@ -18,7 +18,7 @@ If git is properly installed this command will tell you the version of git on yo
 
 #### 0.2 On Mac
 
-You will need to install [Xcode developer tools](https://developer.apple.com/downloads/) if you don't already have it installed. Sign in with your apple id and agree to any terms and conditions. Once you are on the downloads page, choose the ```Command Line Tools``` download and click on the ```.dmg``` file to start the download. Once it is done downloading, you can open the *DMG* and run the Command Line Tools installer.
+You will need to install [Xcode developer tools](https://developer.apple.com/downloads/) if you don't already have it installed. Sign in with your apple id and agree to the terms and conditions. Once you are on the downloads page, choose the ```Command Line Tools``` download and click on the ```.dmg``` file to start the download. Once it is done downloading, you can open the *DMG* and run the Command Line Tools installer.
 
 Now we need to install git.
 
@@ -36,7 +36,7 @@ If git is properly installed this command will tell you the version of git on yo
 
 #### 0.2 First time git setup
 
-Before we get started, let's set up our git identity. We can set our user name and e-mail using the following two commands:
+Now that git is properly installed, let's set up our git identity. We can set our user name and e-mail using the following two commands:
 
 ```bash
 $ git config --global user.name "Amber Houle"
@@ -77,6 +77,8 @@ $ touch index.html
 
 If you go to your Desktop, you should see the women-who-code folder with the index.html file inside. Go ahead and open this file in the text editor Sublime.
 
+**Note**: Download [Sublime text editor](http://www.sublimetext.com/2) if you haven't aleady installed it.
+
 #### 1.2 Adding content to our index.html
 
 Let's go to the bottom right corner of Sublime. We should be able to click and choose the language we are using, so go ahead and select HTML from the list of languages.
@@ -101,7 +103,7 @@ Within the ```<body>``` tag, let's add a paragraph with the text *Hello World!*.
 <!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
+		<title>Hello World</title>
 	</head>
 	<body>
 		<p>Hello World!</p>
@@ -121,7 +123,7 @@ Your code should now look something like this:
 <!DOCTYPE html>
 <html>
 	<head>
-		<title></title>
+		<title>Hello World</title>
 	</head>
 	<body>
 		<p>Hello Vivian!</p>
