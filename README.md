@@ -1,10 +1,13 @@
 # Learn Version Control with Git
 
-## Section 0: Installing Git
+## Section 0: Installing Git and Setup
 
 #### 0.1 On Windows 
 
 Navigate to https://git-scm.com/download/win . This should automatically start a git download. Go through the git setup wizard steps and click finish when you get to the end of the installer.
+
+**To install git bash: https://github.com/msysgit/msysgit/releases/ **
+
 
 Git should now be installed. You can verify by going to your desktop, right click and select ```git bash ```. This will open up a terminal window.
 
@@ -34,7 +37,7 @@ If git is properly installed this command will tell you the version of git on yo
 
 **Note**: If you get the error ```Agreeing to the Xcode/iOS license requires admin priviledges, please re-run as root via sudo```, then open up Xcode and accept the license agreement.
 
-#### 0.2 First time git setup
+#### 0.3 First time git setup
 
 Now that git is properly installed, let's set up our git identity. We can set our user name and e-mail using the following two commands:
 
@@ -43,6 +46,10 @@ $ git config --global user.name "Amber Houle"
 
 $ git config --global user.email amber.houle3@gmail.com
 ```
+
+#### 0.4 Installing Sublime
+
+We will be writing our code in the text editor Sublime throughout this workshop. If you don't already have Sublime installed you can go ahead and install it [here](http://www.sublimetext.com/2).
 
 ## Section 1: Getting started with HTML
 
@@ -76,8 +83,6 @@ $ touch index.html
 ```
 
 If you go to your Desktop, you should see the women-who-code folder with the index.html file inside. Go ahead and open this file in the text editor Sublime.
-
-**Note**: Download [Sublime text editor](http://www.sublimetext.com/2) if you haven't aleady installed it.
 
 #### 1.2 Adding content to our index.html
 
@@ -192,6 +197,10 @@ $ git log
 
 The output of ```git log``` will show you a list of commits in your git history. For each commit you can see the author of the commit, the date you committed the changes, the commit message as well as the commit id. The commit id is a unique identifier used by git that allows you to view and refer to specific commits in your git history.
 
+#### 2.4 Exercise Breakout
+
+Now that you know some of the git basics, let's add an image to our basic HTML page and commit that to our local git repository.
+
 ## Section 3: Adding your code to GitHub
 
 What if we want to store all of our code in a centralized location? We can move our project to GitHub, which is a git repository hosting service. To add our code to Github, we will first need to create a new repository (or project).
@@ -249,15 +258,176 @@ Cloning makes a copy of the project onto your computer. From now on, everyone in
 
 Go to your Desktop, open the **wwc-basic-blog** folder and double click the *index.html* file to open it in the browser.
 
-#### 4.2 Making Changes
+#### 4.2 Git Workflow
 
-#### 4.3 Git Workflow
+We are going to go through and add some content so this basic blog page. We will use git as we go along to version and keep track of our changes.
 
 When you are working with a team, it is good to get in the habit of following an agreed upon git workflow. For the remainder of this workshop, you should follow this git workflow when making changes to your code:
 
 - make some changes to your code
 - git status
 - git add < filename >
+- git status
 - git commit -m "Message describing your changes"
 - git pull
 - git push
+
+#### 4.3 Adding Content to the Blog
+
+##### 4.3.1 Adding a new HTML page
+
+Let's add a page to our blog and let's do this first part on one computer together in our teams. First, lets open the project in Sublime. You should see a folder called assets, an index.html file and a README.md. Now go to your terminal and make sure you are in the directory of the blog. If you want to check the current directory you are in you can type:
+
+```bash
+$ pwd
+```
+
+```pwd``` is another bash command that will show you your *present working directory*. You should be in the directory ```~\Desktop\wwc-basic-blog```. If you are not here then you can change directories:
+
+```bash
+$ cd ~\Desktop\wwc-basic-blog
+```
+
+Now let's create a new page for our blog so we can write about our favorite restaurants in Chicago. Remember the ```touch``` command allows you to create a new file:
+
+```bash
+$ touch favorite-restaurants.html
+```
+
+Let's go ahead and open the *favorite-restaurants.html* file in Sublime and add the basic HTML structure.
+
+```bash
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Favorite Restaurants</title>
+	</head>
+	<body>
+	</body>
+</html>
+```
+
+If we want to use the same styling as our blog's front page we can include the *css* stylesheet called *main.css* which you can find in the *assets/stylesheets* folder. To include a *css* stylesheet you need to use the ```<link>``` tag and include it within the ```<head>``` tags of your HTML:
+
+```bash
+<!DOCTYPE html>
+<html>
+	<head>
+  		<title>Favorite Restaurants</title>
+  		<link rel="stylesheet" href="assets/stylesheets/main.css">
+	</head>
+	<body>
+	</body>
+</html>
+```
+
+```href``` specifies the location of the css stylesheet you are including in your HTML file. If you open the *favorite-restaurants.html* file in your browser, you should see a blank page. Let's go ahead and add a section to our new page with a header called *Favorite Restaurants in Chicago*: 
+
+```bash
+<!DOCTYPE html>
+<html>
+	<head>
+  		<title>Favorite Restaurants</title>
+  		<link rel="stylesheet" href="assets/stylesheets/main.css">
+	</head>
+	<body>
+	    <section>
+      		<h1>Favorite Restaurants in Chicago</h1>
+    	</section>
+	</body>
+</html>
+```
+
+If you refresh the page in your browser you should now see the title *Favorite Restaurants in Chicago*.
+
+This is a good point to *commit* your changes to your git repository and share your code with team members so that everyone can access these changes from their computers!
+
+**Note:** Refer to section **4.2 Git Workflow** to remember the steps involved in committing your code to git and pushing your changes to Github.
+
+Following this workflow, let's first check the current status of our git repository:
+
+```bash
+$ git status
+```
+
+We should see that we have an un-tracked file *favorite-restaurants.html*:
+
+```bash
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	favorite-restaurants.html
+```
+
+We want to track this file and add it to staging:
+
+```bash
+$ git add favorite-restaurants.html
+```
+
+If we check the status again we can see which changes are ready to be committed:
+
+```bash
+$ git status
+```
+
+Now we can go ahead and commit those changes:
+
+```bash
+$ git commit -m "[Team Members Name] Adding a new HTML page for my favorite restaurants"
+```
+
+Our new file *favorite-restaurants.html* is now saved in our local git repository. We want to be able to share these changes with our team members and push the changes to Github. Before we push our changes, let's pull from Github to make sure our local project is up-to-date:
+
+```bash
+$ git pull 
+```
+
+Now that we know we have all of the most recent code from Github, we can push up our changes:
+
+```bash
+$ git push
+```
+
+##### 4.3.2 Adding Content to the new HTML page
+
+Your team should have completed *section 4.3.1* together on one computer. Now let's do some work on the same code base but from each of our own computers.
+
+Remember, before you start making changes to the code, you should pull from Github to make sure you have all of the most recent changes:
+
+```bash
+$ git pull
+```
+
+Now all of your team members should have the new *favorite-restaurants.html* file on your computer.
+
+Each team member should now add a section with a header containing one of their favorite restaurants in Chicago. For example:
+
+```bash
+<!DOCTYPE html>
+<html>
+	<head>
+  		<title>Favorite Restaurants</title>
+  		<link rel="stylesheet" href="assets/stylesheets/main.css">
+	</head>
+	<body>
+		.
+		.
+		.
+
+	    <section>
+      		<h3>The Purple Pig</h3>
+    	</section>
+
+    	. 
+    	.
+    	.
+
+	</body>
+</html>
+```
+
+You should then follow the git workflow to commit your changes to your local git repository then push them to Github.
+
+
+
