@@ -1,3 +1,28 @@
+- [Learn Version Control with Git](#)
+	- [Section 0: Installing Git and Setup](#)
+			- [0.1 On Windows](#)
+			- [0.2 On Mac](#)
+			- [0.3 First time git setup](#)
+			- [0.4 Installing Sublime](#)
+	- [Section 1: Getting started with HTML](#)
+			- [1.1 Creating an HTML file](#)
+			- [1.2 Adding content to our index.html](#)
+			- [1.3 Making changes to our index.html](#)
+	- [Section 2: Introducing Git](#)
+			- [2.1 Staging files](#)
+			- [2.2 Committing files](#)
+			- [2.3 Checking the Git commit history](#)
+			- [2.4 Exercise Breakout](#)
+	- [Section 3: Adding your code to GitHub](#)
+	- [Section 4: Working Together from an Existing Repository](#)
+			- [4.1 Getting the Code](#)
+			- [4.2 Git Workflow](#)
+			- [4.3 Adding Content to the Blog](#)
+				- [4.3.1 Adding a new HTML page](#)
+				- [4.3.2 Adding Content to the new HTML page](#)
+				- [4.3.3 Dealing with Merge Conflicts](#)
+				- [4.3.4 Adding Images](#)
+				
 # Learn Version Control with Git
 
 ## Section 0: Installing Git and Setup
