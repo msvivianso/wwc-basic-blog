@@ -1,32 +1,34 @@
 - [Learn Version Control with Git](#)
-	- [Section 0: Installing Git and Setup](#)
-			- [0.1 On Windows](#)
-			- [0.2 On Mac](#)
-			- [0.3 First time git setup](#)
-			- [0.4 Installing Sublime](#)
-	- [Section 1: Getting started with HTML](#)
-			- [1.1 Creating an HTML file](#)
-			- [1.2 Adding content to our index.html](#)
-			- [1.3 Making changes to our index.html](#)
-	- [Section 2: Introducing Git](#)
-			- [2.1 Staging files](#)
-			- [2.2 Committing files](#)
-			- [2.3 Checking the Git commit history](#)
-			- [2.4 Exercise Breakout](#)
+	- [Section 0: Installing Git and Setup](#installing)
+		- [0.1 On Windows](#windows)
+		- [0.2 On Mac](#mac)
+		- [0.3 First time git setup](#setup)
+		- [0.4 Installing Sublime](#sublime)
+	- [Section 1: Getting started with HTML](#html)
+		- [1.1 Creating an HTML file](#createHtml)
+		- [1.2 Adding content to our index.html](#addContent)
+		- [1.3 Making changes to our index.html](#makeChange)
+	- [Section 2: Introducing Git](#git)
+		- [2.1 Staging files](#staging)
+		- [2.2 Committing files](#committing)
+		- [2.3 Checking the Git commit history](#log)
+		- [2.4 Exercise Breakout](#exercise)
 	- [Section 3: Adding your code to GitHub](#)
 	- [Section 4: Working Together from an Existing Repository](#)
-			- [4.1 Getting the Code](#)
-			- [4.2 Git Workflow](#)
-			- [4.3 Adding Content to the Blog](#)
-				- [4.3.1 Adding a new HTML page](#)
-				- [4.3.2 Adding Content to the new HTML page](#)
-				- [4.3.3 Dealing with Merge Conflicts](#)
-				- [4.3.4 Adding Images](#)
-				
+		- [4.1 Getting the Code](#)
+		- [4.2 Git Workflow](#)
+		- [4.3 Adding Content to the Blog](#)
+			- [4.3.1 Adding a new HTML page](#)
+			- [4.3.2 Adding Content to the new HTML page](#)
+			- [4.3.3 Dealing with Merge Conflicts](#)
+			- [4.3.4 Adding Images](#)
+
 # Learn Version Control with Git
 
+<a name="installing"/>
 ## Section 0: Installing Git and Setup
 
+<a name="windows"/>
 #### 0.1 On Windows 
 
 Navigate to https://git-scm.com/download/win . This should automatically start a git download. Go through the git setup wizard steps and click finish when you get to the end of the installer.
@@ -41,6 +43,7 @@ $ git --version
 
 If git is properly installed this command will tell you the version of git on your computer.
 
+<a name="mac"/>
 #### 0.2 On Mac
 
 You will need to install [Xcode developer tools](https://developer.apple.com/downloads/) if you don't already have it installed. Sign in with your apple id and agree to the terms and conditions. Once you are on the downloads page, choose the ```Command Line Tools``` download and click on the ```.dmg``` file to start the download. Once it is done downloading, you can open the *DMG* and run the Command Line Tools installer.
@@ -59,6 +62,7 @@ If git is properly installed this command will tell you the version of git on yo
 
 **Note**: If you get the error ```Agreeing to the Xcode/iOS license requires admin priviledges, please re-run as root via sudo```, then open up Xcode and accept the license agreement.
 
+<a name="setup"/>
 #### 0.3 First time git setup
 
 Now that git is properly installed, let's set up our git identity. We can set our user name and e-mail using the following two commands:
@@ -69,6 +73,7 @@ $ git config --global user.name "Amber Houle"
 $ git config --global user.email amber.houle3@gmail.com
 ```
 
+<a name="sublime"/>
 #### 0.4 Installing Sublime
 
 We will be writing our code in the text editor Sublime throughout this workshop. If you don't already have Sublime installed you can go ahead and install it [here](http://www.sublimetext.com/2).
