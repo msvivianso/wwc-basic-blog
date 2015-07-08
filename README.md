@@ -60,8 +60,6 @@ $ git --version
 
 If git is properly installed this command will tell you the version of git on your computer.
 
-**Note**: If you get the error ```Agreeing to the Xcode/iOS license requires admin priviledges, please re-run as root via sudo```, then open up Xcode and accept the license agreement.
-
 <a name="setup"/>
 #### 0.3 First time git setup
 
@@ -70,7 +68,7 @@ Now that git is properly installed, let's set up our git identity. We can set ou
 ```bash
 $ git config --global user.name "Amber Houle"
 
-$ git config --global user.email amber.houle3@gmail.com
+$ git config --global user.email amber.houle@example.com
 ```
 
 <a name="sublime"/>
@@ -483,10 +481,21 @@ What happens if two team members are making changes to the same file on the same
 
 When you pull in code that has changes on the same line you have changed, git will give you a *merge conflict*. When this happens, you will need to open the file that has a merge conflict and manually choose which changes you want to be applied to the file.
 
+Once you have manually fixed the merge conflict in the file and saved the file, you can commit the file to your git repository.
+
 <a name="images"/>
 ##### 4.3.4 Adding Images
 
 Each one of you should now find an image of your favorite restaurant, or favorite food on the menu, and add the image beneath the name of your favorite restaurant. You can use the example in the *index.html* file of how to add an image.
 
 Once you've added your image, commit your changes and push them to Github.
+
+<a name="linkingPages"/>
+##### 4.3.5 Linking Pages
+
+Let's set up a link from our blog's home page (*index.html*) to our new *favorite-restaurants.html* page.
+
+To do so, let's add a list element to our header in the *index.html* with the text *Favorite Restaurants*, and use the ```<href>``` html tag to link it to our *favorite-restaurants.html*.
+
+View your changes in the browser. Once it is working the way you want, go ahead and commit these changes and push it to Github!
 
