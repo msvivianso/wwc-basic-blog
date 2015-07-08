@@ -1,29 +1,29 @@
-- [Learn Version Control with Git](#)
-	- [Section 0: Installing Git and Setup](#installing)
-		- [0.1 On Windows](#windows)
-		- [0.2 On Mac](#mac)
-		- [0.3 First time git setup](#setup)
-		- [0.4 Installing Sublime](#sublime)
-	- [Section 1: Getting started with HTML](#html)
-		- [1.1 Creating an HTML file](#createHtml)
-		- [1.2 Adding content to our index.html](#addContent)
-		- [1.3 Making changes to our index.html](#makeChange)
-	- [Section 2: Introducing Git](#git)
-		- [2.1 Staging files](#staging)
-		- [2.2 Committing files](#committing)
-		- [2.3 Checking the Git commit history](#log)
-		- [2.4 Exercise Breakout](#exercise)
-	- [Section 3: Adding your code to GitHub](#github)
-	- [Section 4: Working Together from an Existing Repository](#repo)
-		- [4.1 Getting the Code](#code)
-		- [4.2 Git Workflow](#workflow)
-		- [4.3 Adding Content to the Blog](#blog)
-			- [4.3.1 Adding a new HTML page](#newHtml)
-			- [4.3.2 Adding Content to the new HTML page](#newHtmlContent)
-			- [4.3.3 Dealing with Merge Conflicts](#merge)
-			- [4.3.4 Adding Images](#images)
-
 # Learn Version Control with Git
+
+- [Section 0: Installing Git and Setup](#installing)
+	- [0.1 On Windows](#windows)
+	- [0.2 On Mac](#mac)
+	- [0.3 First time git setup](#setup)
+	- [0.4 Installing Sublime](#sublime)
+- [Section 1: Getting started with HTML](#html)
+	- [1.1 Creating an HTML file](#createHtml)
+	- [1.2 Adding content to our index.html](#addContent)
+	- [1.3 Making changes to our index.html](#makeChange)
+- [Section 2: Introducing Git](#git)
+	- [2.1 Staging files](#staging)
+	- [2.2 Committing files](#committing)
+	- [2.3 Checking the Git commit history](#log)
+	- [2.4 Exercise Breakout](#exercise)
+- [Section 3: Adding your code to GitHub](#github)
+- [Section 4: Working Together from an Existing Repository](#repo)
+	- [4.1 Getting the Code](#code)
+	- [4.2 Git Workflow](#workflow)
+	- [4.3 Adding Content to the Blog](#blog)
+		- [4.3.1 Adding a new HTML page](#newHtml)
+		- [4.3.2 Adding Content to the new HTML page](#newHtmlContent)
+		- [4.3.3 Dealing with Merge Conflicts](#merge)
+		- [4.3.4 Adding Images](#images)
+
 
 <a name="installing"/>
 ## Section 0: Installing Git and Setup
@@ -475,8 +475,6 @@ Each team member should now add a section with a header containing one of their 
 ```
 
 You should then follow the git workflow to commit your changes to your local git repository then push them to Github.
-
-**Note:**
 
 <a name="merge"/>
 ##### 4.3.3 Dealing with Merge Conflicts
