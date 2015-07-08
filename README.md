@@ -272,7 +272,7 @@ If we refresh our Github project page, we should now see our code has been added
 <a name="repo"/>
 ## Section 4: Working Together from an Existing Repository
 
-We are going to switch gears a little and work off of an existing HTML project we have created for this workshop. Let's split up into groups of 2 or 3. We will be working from the **wwc-basic-blog** repository at the top of this tutorial.
+We are going to switch gears a little and work off of an existing HTML project we have created for this workshop. Let's split up into groups of 2 or 3. We will be working from the [wwc-basic-blog](https://github.com/msvivianso/wwc-basic-blog) repository at the top of this tutorial.
 
 <a name="code"/>
 #### 4.1 Getting the Code
