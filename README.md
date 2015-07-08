@@ -13,15 +13,15 @@
 		- [2.2 Committing files](#committing)
 		- [2.3 Checking the Git commit history](#log)
 		- [2.4 Exercise Breakout](#exercise)
-	- [Section 3: Adding your code to GitHub](#)
-	- [Section 4: Working Together from an Existing Repository](#)
-		- [4.1 Getting the Code](#)
-		- [4.2 Git Workflow](#)
-		- [4.3 Adding Content to the Blog](#)
-			- [4.3.1 Adding a new HTML page](#)
-			- [4.3.2 Adding Content to the new HTML page](#)
-			- [4.3.3 Dealing with Merge Conflicts](#)
-			- [4.3.4 Adding Images](#)
+	- [Section 3: Adding your code to GitHub](#github)
+	- [Section 4: Working Together from an Existing Repository](#repo)
+		- [4.1 Getting the Code](#code)
+		- [4.2 Git Workflow](#workflow)
+		- [4.3 Adding Content to the Blog](#blog)
+			- [4.3.1 Adding a new HTML page](#newHtml)
+			- [4.3.2 Adding Content to the new HTML page](#newHtmlContent)
+			- [4.3.3 Dealing with Merge Conflicts](#merge)
+			- [4.3.4 Adding Images](#images)
 
 # Learn Version Control with Git
 
@@ -78,8 +78,10 @@ $ git config --global user.email amber.houle3@gmail.com
 
 We will be writing our code in the text editor Sublime throughout this workshop. If you don't already have Sublime installed you can go ahead and install it [here](http://www.sublimetext.com/2).
 
+<a name="html"/>
 ## Section 1: Getting started with HTML
 
+<a name="createHtml"/>
 #### 1.1 Creating an HTML file
 
 Let's start by creating a basic HTML file on our computer. 
@@ -113,6 +115,7 @@ $ touch index.html
 
 If you go to your Desktop, you should see the women-who-code folder with the index.html file inside. Go ahead and open this file in the text editor Sublime.
 
+<a name="addContent"/>
 #### 1.2 Adding content to our index.html
 
 Let's go to the bottom right corner of Sublime. We should be able to click and choose the language we are using, so go ahead and select HTML from the list of languages.
@@ -147,6 +150,7 @@ Within the ```<body>``` tag, let's add a paragraph with the text *Hello World!*.
 
 Navigate to the **women-who-code** folder on your desktop and double-click the index.html file to open it in your browser. You should see the *Hello World!* message in your browser.
 
+<a name="makeChange"/>
 #### 1.3 Making changes to our index.html
 
 Now let's make a change to our index.html. Instead of saying *Hello World!* say hello to the person sitting on your right (or left). For example *Hello Vivian!*
@@ -166,6 +170,7 @@ Your code should now look something like this:
 ```
 Refresh your browser to see the new message.
 
+<a name="git"/>
 ## Section 2: Introducing Git
 
 Let's add version control to our project with Git! To initialize a new git repository for your project, make sure you are in the **women-who-code** folder and type
@@ -182,6 +187,7 @@ $ ls -a
 
 ```ls``` is another bash command that will list all of files and folders in your current directory. The option ```-a``` will make sure you list all of the files and folders, including the .git directory.
 
+<a name="staging"/>
 #### 2.1 Staging files
 
 A really useful command is to check the status of your git repository. This will tell you what files you have modified and which files are in staging ready to be committed. To check the status of your git repository you can type:
@@ -202,6 +208,7 @@ The ```git add``` command will move your index.html file from your working direc
 
 If we check the git status again, we can see that the index.html file is in staging and ready to be committed.
 
+<a name="committing"/>
 #### 2.2 Committing files
 
 We have moved our changes from the working directory to staging, but these changes won't be saved in our version control history until we commit them to the git directory. In git, the term *commit* is just another way of saying *save* our changes to the git directory. 
@@ -216,6 +223,7 @@ Now if we check the ```git status``` again we will see that there is nothing to 
 
 **Note**: To include a commit message, you can use the option ```--message``` as seen above. Alternatively you can use the option ```-m``` which is just a shorthand notation for ```--message``` in which case your commit would look like:  ```git commit -m "Useful commit message"```
 
+<a name="log"/>
 #### 2.3 Checking the Git commit history
 
 If we want to see a list of all the commits we have made we can use the command:
@@ -226,10 +234,12 @@ $ git log
 
 The output of ```git log``` will show you a list of commits in your git history. For each commit you can see the author of the commit, the date you committed the changes, the commit message as well as the commit id. The commit id is a unique identifier used by git that allows you to view and refer to specific commits in your git history.
 
+<a name="exercise"/>
 #### 2.4 Exercise Breakout
 
 Now that you know some of the git basics, let's add an image to our basic HTML page and commit that to our local git repository.
 
+<a name="github"/>
 ## Section 3: Adding your code to GitHub
 
 What if we want to store all of our code in a centralized location? We can move our project to GitHub, which is a git repository hosting service. To add our code to Github, we will first need to create a new repository (or project).
@@ -259,10 +269,12 @@ This promotes your code from your local computer to your project created in Gith
 
 If we refresh our Github project page, we should now see our code has been added to Github!
 
+<a name="repo"/>
 ## Section 4: Working Together from an Existing Repository
 
 We are going to switch gears a little and work off of an existing HTML project we have created for this workshop. Let's split up into groups of 2 or 3. We will be working from the **wwc-basic-blog** repository at the top of this tutorial.
 
+<a name="code"/>
 #### 4.1 Getting the Code
 
 We will want to start by making a copy of [this code](https://github.com/msvivianso/wwc-basic-blog) into our own Github account. At the top right corner of the project page you will see a button that says *Fork*.
@@ -287,6 +299,7 @@ Cloning makes a copy of the project onto your computer. From now on, everyone in
 
 Go to your Desktop, open the **wwc-basic-blog** folder and double click the *index.html* file to open it in the browser.
 
+<a name="workflow"/>
 #### 4.2 Git Workflow
 
 We are going to go through and add some content so this basic blog page. We will use git as we go along to version and keep track of our changes.
@@ -301,8 +314,10 @@ When you are working with a team, it is good to get in the habit of following an
 - git pull
 - git push
 
+<a name="blog"/>
 #### 4.3 Adding Content to the Blog
 
+<a name="newHtml"/>
 ##### 4.3.1 Adding a new HTML page
 
 Let's add a page to our blog and let's do this first part on one computer together in our teams. First, lets open the project in Sublime. You should see a folder called assets, an index.html file and a README.md. Now go to your terminal and make sure you are in the directory of the blog. If you want to check the current directory you are in you can type:
@@ -420,7 +435,7 @@ $ git push
 
 If you refresh your Github project page you should be able to see your new *favorite-restaurants.html* file.
 
-
+<a name="newHtmlContent"/>
 ##### 4.3.2 Adding Content to the new HTML page
 
 Your team should have completed *section 4.3.1* together on one computer. Now let's do some work on the same code base but from each of our own computers.
@@ -463,12 +478,14 @@ You should then follow the git workflow to commit your changes to your local git
 
 **Note:**
 
+<a name="merge"/>
 ##### 4.3.3 Dealing with Merge Conflicts
 
 What happens if two team members are making changes to the same file on the same line of code? How does git decide which change is correct and how to merge those changes together?
 
 When you pull in code that has changes on the same line you have changed, git will give you a *merge conflict*. When this happens, you will need to open the file that has a merge conflict and manually choose which changes you want to be applied to the file.
 
+<a name="images"/>
 ##### 4.3.4 Adding Images
 
 Each one of you should now find an image of your favorite restaurant, or favorite food on the menu, and add the image beneath the name of your favorite restaurant. You can use the example in the *index.html* file of how to add an image.
