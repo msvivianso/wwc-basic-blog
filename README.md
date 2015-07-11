@@ -318,7 +318,7 @@ When you are working with a team, it is good to get in the habit of following an
 <a name="newHtml"/>
 ##### 4.3.1 Adding a new HTML page
 
-Let's add a page to our blog and let's do this first part on one computer together in our teams. First, lets open the project in Sublime. You should see a folder called assets, an index.html file and a README.md. Now go to your terminal and make sure you are in the directory of the blog. If you want to check the current directory you are in you can type:
+Let's add a page to our blog and let's have everyone do this first part on your own computers. First, lets open the project in Sublime. You should see a folder called assets, an index.html file and a README.md. Now go to your terminal and make sure you are in the directory of the blog. If you want to check the current directory you are in you can type:
 
 ```bash
 $ pwd
@@ -416,7 +416,7 @@ $ git status
 Now we can go ahead and commit those changes:
 
 ```bash
-$ git commit -m "[Team Members Name] Adding a new HTML page for my favorite restaurants"
+$ git commit -m "[Name] Adding a new HTML page for my favorite restaurants"
 ```
 
 Our new file *favorite-restaurants.html* is now saved in our local git repository. We want to be able to share these changes with our team members and push the changes to Github. Before we push our changes, let's pull from Github to make sure our local project is up-to-date:
@@ -436,7 +436,7 @@ If you refresh your Github project page you should be able to see your new *favo
 <a name="newHtmlContent"/>
 ##### 4.3.2 Adding Content to the new HTML page
 
-Your team should have completed *section 4.3.1* together on one computer. Now let's do some work on the same code base but from each of our own computers.
+Now let's do some work on the same code base but from each of our own computers.
 
 Remember, before you start making changes to the code, you should pull from Github to make sure you have all of the most recent changes:
 
@@ -444,9 +444,7 @@ Remember, before you start making changes to the code, you should pull from Gith
 $ git pull
 ```
 
-Now all of your team members should have the new *favorite-restaurants.html* file on your computer.
-
-Each team member should now add a section with a header containing one of their favorite restaurants in Chicago. For example:
+You should now add a section with a header containing one of your favorite restaurants in Chicago. For example:
 
 ```bash
 <!DOCTYPE html>
@@ -474,28 +472,44 @@ Each team member should now add a section with a header containing one of their 
 
 You should then follow the git workflow to commit your changes to your local git repository then push them to Github.
 
-<a name="merge"/>
-##### 4.3.3 Dealing with Merge Conflicts
-
-What happens if two team members are making changes to the same file on the same line of code? How does git decide which change is correct and how to merge those changes together?
-
-When you pull in code that has changes on the same line you have changed, git will give you a *merge conflict*. When this happens, you will need to open the file that has a merge conflict and manually choose which changes you want to be applied to the file.
-
-Once you have manually fixed the merge conflict in the file and saved the file, you can commit the file to your git repository.
 
 <a name="images"/>
-##### 4.3.4 Adding Images
+##### 4.3.3 Adding Images
 
 Each one of you should now find an image of your favorite restaurant, or favorite food on the menu, and add the image beneath the name of your favorite restaurant. You can use the example in the *index.html* file of how to add an image.
 
 Once you've added your image, commit your changes and push them to Github.
 
 <a name="linkingPages"/>
-##### 4.3.5 Linking Pages
+##### 4.3.4 Linking Pages
 
 Let's set up a link from our blog's home page (*index.html*) to our new *favorite-restaurants.html* page.
 
 To do so, let's add a list element to our header in the *index.html* with the text *Favorite Restaurants*, and use the ```<href>``` html tag to link it to our *favorite-restaurants.html*.
 
 View your changes in the browser. Once it is working the way you want, go ahead and commit these changes and push it to Github!
+
+<a name="linkingPages"/>
+##### 4.3.5 Changing the Footer
+
+If you open up your *index.html* in the browser, in the bottom left corner you should see *Created by Your name*. Let's go ahead and replace *name* with your own name!
+
+View your changes in the browser. And go ahead and commit these changes and push it to Github!
+
+<a name="linkingPages"/>
+##### 4.3.6 Working Together
+
+Now let's get into groups of 2 or 3! Let's choose one codebase to work from from now on, so that we will be committing and pushing code to the same Github account! This way we will get practice working together!
+
+Take turns each adding a new section with another favorite restaurant in Chicago and a photo! Make sure you are committing after every new restaurant you add, and pull from Github before you push new changes!
+
+
+<a name="merge"/>
+##### 4.3.7 Dealing with Merge Conflicts
+
+What happens if two team members are making changes to the same file on the same line of code? How does git decide which change is correct and how to merge those changes together?
+
+When you pull in code that has changes on the same line you have changed, git will give you a *merge conflict*. When this happens, you will need to open the file that has a merge conflict and manually choose which changes you want to be applied to the file.
+
+Once you have manually fixed the merge conflict in the file and saved the file, you can commit the file to your git repository.
 
