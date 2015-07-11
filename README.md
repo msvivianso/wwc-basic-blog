@@ -324,10 +324,10 @@ Let's add a page to our blog and let's have everyone do this first part on your 
 $ pwd
 ```
 
-```pwd``` is another bash command that will show you your *present working directory*. You should be in the directory ```~\Desktop\wwc-basic-blog```. If you are not here then you can change directories:
+```pwd``` is another bash command that will show you your *present working directory*. You should be in the directory ```~/Desktop/wwc-basic-blog```. If you are not here then you can change directories:
 
 ```bash
-$ cd ~\Desktop\wwc-basic-blog
+$ cd ~/Desktop/wwc-basic-blog
 ```
 
 Now let's create a new page for our blog so we can write about our favorite restaurants in Chicago. Remember the ```touch``` command allows you to create a new file:
